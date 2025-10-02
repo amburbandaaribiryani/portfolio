@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Events.css";
 
 import heroImg from "../assets/images/event_hero.png";
-import catBirthday from "../assets/images/Birthday.png";
+import catBirthday from "../assets/images/birthday.png";
 import catWedding from "../assets/images/wedding.png";
 import catCorporate from "../assets/images/corporate.png";
 import catBulk from "../assets/images/bulk.png";

@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti'
 
 import '../styles/Home.css'
 
-import biryaniHero from '../assets/images/Biryani.png'
+import biryaniHero from '../assets/images/biryani.png'
 // import steamingPot from "../assets/images/logo.png";
 import dish1 from '../assets/images/dish1.png'
 import dish2 from '../assets/images/dish2.png'
