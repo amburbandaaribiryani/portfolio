@@ -1,0 +1,320 @@
+.resources-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #fffaf3, #ffffff);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  padding-top: 80px;
+  line-height: 1.7;
+}
+
+
+.resources-header {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+}
+
+.resources-header h1,
+.page-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.resources-header p,
+.page-subtitle {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.65;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.resources-content {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* ==========================
+   Generic Card
+   ========================== */
+.coming-soon-card,
+.recipe-card,
+.faq-card,
+.career-card,
+.terms-card,
+.blog-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coming-soon-card:hover,
+.recipe-card:hover,
+.faq-card:hover,
+.career-card:hover,
+.terms-card:hover,
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================
+   Recipe Specific
+   ========================== */
+.recipe-card h2 {
+  font-size: 1.6rem;
+  color: #d2691e;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.recipe-card ul li,
+.recipe-card ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ==========================
+   Blog Specific
+   ========================== */
+.blog-post {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 2.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  line-height: 1.75;
+  color: #333;
+}
+
+.blog-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+  margin-top: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.blog-post ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.blog-post ul li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.blog-footer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fafafa;
+  border-left: 4px solid #d2691e;
+  border-radius: 0.6rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* ==========================
+   FAQ Specific
+   ========================== */
+.faq-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.6rem;
+}
+
+.faq-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+.faq-card strong {
+  color: #d2691e;
+}
+
+/* ==========================
+   Careers Specific
+   ========================== */
+.career-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.career-meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+.apply-btn {
+  margin-top: 1rem;
+  padding: 0.85rem 1.6rem;
+  background: #d2691e;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: #b35717;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Terms & Conditions Specific
+   ========================== */
+.terms-wrapper {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.8;
+  color: #333;
+}
+
+.terms-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.terms-wrapper h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #d2691e;
+  padding-left: 0.75rem;
+}
+
+.terms-wrapper p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.terms-wrapper strong {
+  color: #d2691e;
+}
+
+/* ==========================
+   Responsive Design
+   ========================== */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .resources-header h1,
+  .page-title {
+    font-size: 2.8rem;
+  }
+
+  .resources-header p,
+  .page-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .blog-title {
+    font-size: 2.1rem;
+  }
+
+  .faq-card h2 {
+    font-size: 1.65rem;
+  }
+
+  .terms-wrapper {
+    padding: 2.5rem;
+  }
+
+  .terms-wrapper h2 {
+    font-size: 1.85rem;
+  }
+
+  .terms-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .resources-header h1,
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .recipe-card,
+  .blog-post,
+  .faq-card,
+  .terms-wrapper {
+    padding: 2.8rem;
+  }
+
+  .terms-wrapper h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1440px) {
+  .resources-content {
+    max-width: 1200px; /* ✅ stays single column but avoids stretching */
+    gap: 3.2rem;
+  }
+
+  .blog-title {
+    font-size: 2.4rem;
+  }
+
+  .faq-card h2 {
+    font-size: 1.9rem;
+  }
+}

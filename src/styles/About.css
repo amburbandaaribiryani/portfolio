@@ -1,0 +1,385 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap");
+
+/* ---------- Theme ---------- */
+.abb-about {
+  --abb-gold: #c8a252;
+  --abb-gold-soft: #e4cf9c;
+  --abb-brown: #3c2c22;
+  --abb-brown-deep: #2b1f18;
+  --abb-cream: #faeedc;
+  --abb-cream-deeper: #f2e2c9;
+  --abb-text: #2a2420;
+  --abb-muted: #6b5e55;
+
+  --abb-radius: 18px;
+  --abb-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  --abb-shadow-soft: 0 8px 20px rgba(0,0,0,0.12);
+  --abb-maxw: 1200px;
+
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--abb-text);
+  background: var(--abb-cream);
+  line-height: 1.6;
+}
+
+/* ---------- Utilities ---------- */
+.abb-container {
+  max-width: var(--abb-maxw);
+  margin-inline: auto;
+  padding: 48px 20px;
+}
+
+.abb-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px; 
+}
+
+.abb-grid--3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.abb-center { text-align: center; }
+
+.abb-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0;
+
+}
+
+/* ---------- Type ---------- */
+.abb-eyebrow {
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--abb-gold-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: -30px;
+}
+
+.abb-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3.5vw + 1rem, 4rem);
+  color: #fff;
+  line-height: 1.15;
+  text-shadow: 0 6px 28px rgba(0,0,0,0.5);
+  margin-bottom: 18px;
+}
+
+.abb-subtitle {
+  color: #f8f3ea;
+  font-size: clamp(1rem, 1.2vw + .7rem, 1.25rem);
+  text-overflow: ellipsis; 
+    margin-top: 8px;
+
+}
+
+/* ---------- Buttons ---------- */
+.abb-btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.abb-btn--gold {
+    background: linear-gradient(90deg, #d4af37, #b8860b);
+    transition: all .3s ease;
+    width: 150px; 
+    width: auto;              
+    text-align: center; 
+    padding: 10px 26px !important;
+    font-size: 0.95rem !important;
+    border-radius: 20px;
+
+}
+.abb-btn--gold:hover {  
+   background: linear-gradient(90deg, #b8860b, #d4af37);
+  box-shadow: 0 6px 16px rgba(212,175,55,0.45);
+  transform: translateY(-3px) scale(1.02);
+ }
+
+.abb-btn--gold:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ---------- Hero ---------- */
+.abb-hero {
+  position: relative;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--abb-brown-deep);
+  padding-top: 80px; 
+
+}
+
+.abb-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
+  transform: scale(1.05);
+}
+
+.abb-hero__overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(44,28,18,0.15), rgba(44,28,18,0.8)),
+              linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.55));
+}
+
+.abb-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+  display: grid;
+  gap: 20px;
+  justify-items: center; 
+}
+
+/* ---------- Sections ---------- */
+.abb-section--story {
+  background: linear-gradient(to bottom, #fffaf3, #ffffff);
+   /* padding: 60px 20px; */
+}
+
+.abb-story .abb-h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 1.4vw + 1.2rem, 2.2rem);
+    line-height: 1.8;
+  color: var(--abb-brown);
+  color: #333;
+
+}
+.abb-story p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.abb-body { 
+  color: var(--abb-muted);
+   font-size: 1.05rem;
+    margin-bottom: 14px;
+   }
+
+.abb-story blockquote {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--abb-brown);
+  text-align: center;
+  margin-top: 24px;
+  border-left: 4px solid var(--abb-gold);
+  padding-left: 9px;
+}
+
+.abb-gold {
+  color: var(--abb-gold);
+  font-weight: 600;
+}
+
+.abb-story__media {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+.abb-photo {
+  border-radius: var(--abb-radius);
+  overflow: hidden;
+  box-shadow: var(--abb-shadow-soft);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.abb-photo img { display: block; width: 100%; height: auto; }
+
+/* ---------- Chefs ---------- */
+.abb-section--chefs {
+  background: linear-gradient(to bottom, #fffaf3, #ffffff);
+}
+
+.abb-chefs {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.abb-chefcard {
+  position: relative; 
+  background: #fff;
+  border-radius: calc(var(--abb-radius) + 6px);
+  overflow: hidden;
+  box-shadow: var(--abb-shadow-soft);
+  border: 1px solid rgba(200, 162, 82, 0.35);
+  transition: transform .25s ease, box-shadow .25s ease;
+
+}
+.abb-section--chefs .abb-h2 {
+  color: #2b1d0e;              
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.abb-section--chefs .abb-h2::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: var(--abb-gold);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.abb-chefcard:hover {
+  transform: translateY(-8px) scale(1.03);
+  border: 2px solid var(--abb-gold);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+}
+
+.abb-chefcard__img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.abb-chefcard__caption {
+  padding: 14px 16px 18px;
+  display: grid;
+}
+.abb-chefcard__name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--abb-brown);
+}
+
+
+.abb-chefcard__role {
+  color: var(--abb-muted);
+  font-size: .95rem;
+}
+
+.abb-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--abb-gold);
+  color: #1f160f;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ---------- Philosophy ---------- */
+.abb-section--philosophy {
+  color: #f7f2e8;
+  background: linear-gradient(to bottom, #fffaf3, #ffffff);
+   padding: 50px 20px;
+}
+
+
+.abb-h2 { color: #f7f2e8; font-family: "Playfair Display", serif; }
+
+.abb-section--philosophy .abb-h2 {
+  font-size: 2.3rem;             
+  font-weight: 500;
+  text-align: center;
+  color: #2b1d0e;               
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.abb-section--philosophy .abb-h2::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #b8860b);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+
+.abb-philocard {
+  background: #fff;
+  -webkit-backdrop-filter: blur(3px); 
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(200, 162, 82, 0.35);
+  border-radius: 20px;  
+   padding: 22px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+
+.abb-philocard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+.abb-h3 {
+  font-family: "Playfair Display", serif;
+   font-size: 1.4rem;
+  font-weight: 600;
+  color: #2b1d0e;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+
+}
+.abb-philocard .abb-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 1024px) {
+  .abb-grid { grid-template-columns: 1fr; }
+  .abb-chefcard__img { height: 250px; }
+    .abb-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .abb-container { padding: 40px 16px; }
+  .abb-chefs { grid-template-columns: 1fr; }
+  .abb-hero { min-height: 68vh; }
+}
+
+@media (max-width: 600px) {
+  .abb-grid--3 {
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  }
+
+  .abb-philocard {
+    padding: 18px;
+  }
+
+  .abb-h3 {
+    font-size: 1.3rem; 
+  }
+
+  .abb-philocard .abb-body {
+    font-size: 1rem;
+  }
+}
