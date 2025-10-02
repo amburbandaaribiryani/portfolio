@@ -1,7 +1,7 @@
 import  { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { Search, ShoppingCart, X, Plus, Minus, Star, Clock, Users, ChevronDown } from 'lucide-react';
 import menuData from '../components/MenuCard.json';
-import '../styles/Menu.css';
+import '../styles/menu.css';
 
 
 function useRevealOnScroll(deps = []) {
