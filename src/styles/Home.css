@@ -757,6 +757,7 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
     flex-direction: column;
     text-align: center;
     gap: 25px;
+    padding: 110px 5%;
   }
   .hero-content {
     max-width: 100%;
@@ -781,7 +782,6 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
 @media (max-width: 767px) {
   .hero-section {
     padding: 110px 5%;
-
 
   }
   .hero-headline {
