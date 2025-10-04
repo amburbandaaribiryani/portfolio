@@ -779,6 +779,11 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
 
 /* Large Phones & Small Tablets (576px to 767px) */
 @media (max-width: 767px) {
+  .hero-section {
+    padding: 110px 5%;
+
+
+  }
   .hero-headline {
     font-size: 2rem;
   }
@@ -809,7 +814,7 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
 /* Small Phones (up to 575px) */
 @media (max-width: 575px) {
   .hero-section {
-    padding: 90px 5%;
+    padding: 110px 5%;
 
 
   }
