@@ -803,8 +803,8 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
     max-width: 580px;
   }
   .hero-image { 
-    flex: 0 0 40%; 
-    min-width: 280px;
+    flex: 0 0 38%; 
+    min-width: 260px;
   }
   .hero-headline {
     font-size: clamp(2.4rem, 2.8vw, 2.8rem);
@@ -820,7 +820,7 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
     line-height: 1.55;
   }
   .hero-image img { 
-    max-width: 380px;
+    max-width: 340px;
   }
 }
 
@@ -831,7 +831,7 @@ background: linear-gradient(to bottom, #fffaf3 0%, #ffffff 100%);
     font-size: clamp(2.2rem, 2.6vw + 0.6rem, 2.8rem); 
   }
   .hero-subheadline { font-size: 1.45rem; }
-  .hero-image img { max-width: 360px; }
+  .hero-image img { max-width: 320px; }
 }
 
 @media (min-width: 1200px) {
